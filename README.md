@@ -4,7 +4,7 @@
 
 ### Real-time Weather Forecasting Application
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://weather-forcasting-temperature.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ba1cbf72-821d-422a-9520-a414ce0b32b7/deploy-status)](https://app.netlify.com/projects/weather-forcasting-temperature/deploys)
 [![React](https://img.shields.io/badge/React-16.13.1-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
