@@ -9,7 +9,15 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[🌐 Live Demo](https://weather-forcasting-temperature.netlify.app/) • [📖 Documentation](#features) • [🐛 Report Bug](https://github.com/ajaygangwar945/Weather-App/issues) • [✨ Request Feature](https://github.com/ajaygangwar945/Weather-App/issues)
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=flat-square&logo=netlify)](https://weather-forcasting-temperature.netlify.app/)
+[![Features](https://img.shields.io/badge/Documentation-Features-blue?style=flat-square&logo=readthedocs)](#features)
+[![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat-square&logo=github)](https://github.com/ajaygangwar945/Weather-App/issues)
+[![Request Feature](https://img.shields.io/badge/Request-Feature-brightgreen?style=flat-square&logo=github)](https://github.com/ajaygangwar945/Weather-App/issues)
+
+</div>
+
 
 </div>
 
@@ -17,16 +25,17 @@
 
 ## 📋 Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [About](#-about)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
+
 
 ---
 
@@ -198,9 +207,11 @@ npm run build
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Weather+App+Screenshot" alt="Weather App Screenshot" width="80%">
-  <p><i>Beautiful weather display with animated icons</i></p>
+  <img src="Images/weather.png" width="80%" alt="Home Screen"/>
+  <p><i>Home screen showing current weather</i></p>
+
 </div>
+
 
 ---
 
@@ -226,29 +237,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Ajay Gangwar**
 
-- GitHub: [@ajaygangwar945](https://github.com/ajaygangwar945)
-- Project Link: [https://github.com/ajaygangwar945/Weather-App](https://github.com/ajaygangwar945/Weather-App)
-- Live Demo: [https://weather-forcasting-temperature.netlify.app/](https://weather-forcasting-temperature.netlify.app/)
+- [![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-black?logo=github&style=flat-square)](https://github.com/ajaygangwar945)
+- [![Project](https://img.shields.io/badge/Project-Weather--App-blue?logo=github&style=flat-square)](https://github.com/ajaygangwar945/Weather-App)
+- [![Live Demo](https://img.shields.io/badge/Live-Demo-success?logo=netlify&style=flat-square)](https://weather-forcasting-temperature.netlify.app/)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- [OpenWeatherMap API](https://openweathermap.org/) for weather data
-- [React Animated Weather](https://www.npmjs.com/package/react-animated-weather) for beautiful weather icons
-- [Netlify](https://www.netlify.com/) for hosting
+- [![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-orange?style=flat-square)](https://openweathermap.org/)
+ 
 
----
+- [![React Animated Weather](https://img.shields.io/badge/React%20Animated%20Weather-Icons-blue?style=flat-square)](https://www.npmjs.com/package/react-animated-weather)
 
-## 📊 Project Stats
 
-<div align="center">
+- [![Netlify](https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://www.netlify.com/)
 
-![GitHub stars](https://img.shields.io/github/stars/ajaygangwar945/Weather-App?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ajaygangwar945/Weather-App?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/ajaygangwar945/Weather-App?style=social)
-
-</div>
 
 ---
 
@@ -259,3 +263,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Made with ❤️ by Ajay Gangwar
 
 </div>
+
