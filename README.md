@@ -4,35 +4,40 @@
 
 ### Real-time Weather Forecasting Application
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ba1cbf72-821d-422a-9520-a414ce0b32b7/deploy-status)](https://app.netlify.com/projects/weather-forcasting-temperature/deploys)
-[![React](https://img.shields.io/badge/React-16.13.1-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/projects/weather-forcasting-temperature/deploys)
+[![React](https://img.shields.io/badge/React-16.13.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-8250DF?style=for-the-badge&logo=github&logoColor=white)](CONTRIBUTING.md)
+
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=flat-square&logo=netlify)](https://weather-forcasting-temperature.netlify.app/)
-[![Features](https://img.shields.io/badge/Documentation-Features-blue?style=flat-square&logo=readthedocs)](#features)
-[![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat-square&logo=github)](https://github.com/ajaygangwar945/Weather-App/issues)
-[![Request Feature](https://img.shields.io/badge/Request-Feature-brightgreen?style=flat-square&logo=github)](https://github.com/ajaygangwar945/Weather-App/issues)
-
-</div>
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
+[![Features](https://img.shields.io/badge/Documentation-Features-0969DA?style=for-the-badge&logo=readthedocs&logoColor=white)](#features)
+[![Report Bug](https://img.shields.io/badge/Report-Bug-D1242F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App/issues)
+[![Request Feature](https://img.shields.io/badge/Request-Feature-2EA44F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App/issues)
 
 
 </div>
 
+
+</div>
 
 
 ---
 
 ## 🎯 About
 
-A beautiful, responsive weather application built with React that provides real-time weather information for any location worldwide. Get instant access to current weather conditions, temperature, humidity, wind speed, and more!
+<div align="left">
+ 
+  <img src="https://img.shields.io/badge/Status-Live-2EA44F?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Maintained-Yes-0969DA?style=for-the-badge&logo=github&logoColor=white" />
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/Maintained-Yes-success?style=for-the-badge" alt="Maintained">
 </div>
+
+<p align="justify">A beautiful, responsive weather application built with React that provides real-time weather information for any location worldwide. Get instant access to current weather conditions, temperature, humidity, wind speed, and more!</p>
+
+
 
 ---
 
@@ -105,8 +110,9 @@ A beautiful, responsive weather application built with React that provides real-
 
 Before you begin, ensure you have the following installed:
 
-- ![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?logo=node.js&logoColor=white) Node.js (v14 or higher)
-- ![npm](https://img.shields.io/badge/npm-v6+-CB3837?logo=npm&logoColor=white) npm (v6 or higher)
+- ![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+- ![npm](https://img.shields.io/badge/npm-v6+-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
 
 ### 📥 Installation
 
@@ -223,21 +229,19 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Ajay Gangwar**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-black?logo=github&style=flat-square)](https://github.com/ajaygangwar945)
-- [![Project](https://img.shields.io/badge/Project-Weather--App-blue?logo=github&style=flat-square)](https://github.com/ajaygangwar945/Weather-App)
-- [![Live Demo](https://img.shields.io/badge/Live-Demo-success?logo=netlify&style=flat-square)](https://weather-forcasting-temperature.netlify.app/)
+
+- [![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945)
+- [![Repository](https://img.shields.io/badge/Repository-Weather--App-0969DA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App)
+- [![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- [![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-orange?style=flat-square)](https://openweathermap.org/)
- 
+- [![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-FE7A16?style=for-the-badge&logo=openweathermap&logoColor=white)](https://openweathermap.org/)
+- [![React Animated Weather](https://img.shields.io/badge/Weather-Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://www.npmjs.com/package/react-animated-weather)
+- [![Netlify](https://img.shields.io/badge/Hosted-On_Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
 
-- [![React Animated Weather](https://img.shields.io/badge/React%20Animated%20Weather-Icons-blue?style=flat-square)](https://www.npmjs.com/package/react-animated-weather)
-
-
-- [![Netlify](https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://www.netlify.com/)
 
 
 ---
