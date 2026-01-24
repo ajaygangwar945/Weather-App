@@ -98,57 +98,71 @@ class Weather extends React.Component {
 
   getPosition = (options) => {
     return new Promise(function (resolve, reject) {
-      navigator.geolocation.getCurrentPosition(resolve, reject, options);
+      navigator.geolocation.getCurrentPosition(resolve, reject, {
+        timeout: 5000,
+        enableHighAccuracy: true,
+        ...options
+      });
     });
   };
   getWeather = async (lat, lon) => {
-    const api_call = await fetch(
-      `${apiKeys.base}weather?lat=${lat}&lon=${lon}&units=metric&APPID=${apiKeys.key}`
-    );
-    const data = await api_call.json();
-    this.setState({
-      lat: lat,
-      lon: lon,
-      city: data.name,
-      temperatureC: Math.round(data.main.temp),
-      temperatureF: Math.round(data.main.temp * 1.8 + 32),
-      humidity: data.main.humidity,
-      main: data.weather[0].main,
-      country: data.sys.country,
-      // sunrise: this.getTimeFromUnixTimeStamp(data.sys.sunrise),
+    try {
+      if (lat === undefined || lon === undefined) return;
+      const api_call = await fetch(
+        `${apiKeys.base}weather?lat=${lat}&lon=${lon}&units=metric&APPID=${apiKeys.key}`
+      );
+      const data = await api_call.json();
+      if (data.cod !== 200) {
+        throw new Error(data.message || "Failed to fetch weather data");
+      }
+      this.setState({
+        lat: lat,
+        lon: lon,
+        city: data.name,
+        temperatureC: Math.round(data.main.temp),
+        temperatureF: Math.round(data.main.temp * 1.8 + 32),
+        humidity: data.main.humidity,
+        main: data.weather[0].main,
+        country: data.sys.country,
+      });
 
-      // sunset: this.getTimeFromUnixTimeStamp(data.sys.sunset),
-    });
-    switch (this.state.main) {
-      case "Haze":
-        this.setState({ icon: "CLEAR_DAY" });
-        break;
-      case "Clouds":
-        this.setState({ icon: "CLOUDY" });
-        break;
-      case "Rain":
-        this.setState({ icon: "RAIN" });
-        break;
-      case "Snow":
-        this.setState({ icon: "SNOW" });
-        break;
-      case "Dust":
-        this.setState({ icon: "WIND" });
-        break;
-      case "Drizzle":
-        this.setState({ icon: "SLEET" });
-        break;
-      case "Fog":
-        this.setState({ icon: "FOG" });
-        break;
-      case "Smoke":
-        this.setState({ icon: "FOG" });
-        break;
-      case "Tornado":
-        this.setState({ icon: "WIND" });
-        break;
-      default:
-        this.setState({ icon: "CLEAR_DAY" });
+      switch (data.weather[0].main) {
+        case "Haze":
+          this.setState({ icon: "CLEAR_DAY" });
+          break;
+        case "Clouds":
+          this.setState({ icon: "CLOUDY" });
+          break;
+        case "Rain":
+          this.setState({ icon: "RAIN" });
+          break;
+        case "Snow":
+          this.setState({ icon: "SNOW" });
+          break;
+        case "Dust":
+          this.setState({ icon: "WIND" });
+          break;
+        case "Drizzle":
+          this.setState({ icon: "SLEET" });
+          break;
+        case "Fog":
+          this.setState({ icon: "FOG" });
+          break;
+        case "Smoke":
+          this.setState({ icon: "FOG" });
+          break;
+        case "Tornado":
+          this.setState({ icon: "WIND" });
+          break;
+        default:
+          this.setState({ icon: "CLEAR_DAY" });
+      }
+    } catch (error) {
+      console.error("Error fetching weather:", error);
+      // Fallback if data fetch fails but we want to show SOMETHING
+      if (this.state.lat === undefined) {
+        this.getWeather(28.67, 77.22); // Fallback to Delhi if initial fails
+      }
     }
   };
 
