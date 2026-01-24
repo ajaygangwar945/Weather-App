@@ -9,10 +9,12 @@ function Forcast(props) {
   const [weather, setWeather] = useState({});
 
   const search = (city) => {
+    const targetCity = typeof city === "string" ? city : query;
+    if (!targetCity) return;
+
     axios
       .get(
-        `${apiKeys.base}weather?q=${city !== "[object Object]" ? city : query
-        }&units=metric&APPID=${apiKeys.key}`
+        `${apiKeys.base}weather?q=${targetCity}&units=metric&APPID=${apiKeys.key}`
       )
       .then((response) => {
         setWeather(response.data);
@@ -22,7 +24,7 @@ function Forcast(props) {
         console.log(error);
         setWeather("");
         setQuery("");
-        setError({ message: "Not Found", query: query });
+        setError({ message: "Not Found", query: targetCity });
       });
   };
 
@@ -57,13 +59,18 @@ function Forcast(props) {
             placeholder="Search any city"
             onChange={(e) => setQuery(e.target.value)}
             value={query}
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                search(query);
+              }
+            }}
           />
           <div className="img-box">
             {" "}
             <img
               src="https://images.avishkaar.cc/workflow/newhp/search-white.png"
               alt="Search"
-              onClick={search}
+              onClick={() => search(query)}
             />
           </div>
         </div>
