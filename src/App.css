@@ -6,7 +6,6 @@
 --*/
 
 /*-- Reset Code --*/
-
 html,
 body,
 div,
@@ -94,6 +93,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -107,16 +107,19 @@ nav,
 section {
   display: block;
 }
+
 ol,
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -124,64 +127,95 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* start editing from here */
 a {
   text-decoration: none;
 }
+
 .txt-rt {
   text-align: right;
-} /* text align right */
+}
+
+/* text align right */
 .txt-lt {
   text-align: left;
-} /* text align left */
+}
+
+/* text align left */
 .txt-center {
   text-align: center;
-} /* text align center */
+}
+
+/* text align center */
 .float-rt {
   float: right;
-} /* float right */
+}
+
+/* float right */
 .float-lt {
   float: left;
-} /* float left */
+}
+
+/* float left */
 .clear {
   clear: both;
-} /* clear float */
+}
+
+/* clear float */
 .pos-relative {
   position: relative;
-} /* Position Relative */
+}
+
+/* Position Relative */
 .pos-absolute {
   position: absolute;
-} /* Position Absolute */
+}
+
+/* Position Absolute */
 .vertical-base {
   vertical-align: baseline;
-} /* vertical align baseline */
+}
+
+/* vertical align baseline */
 .vertical-top {
   vertical-align: top;
-} /* vertical align top */
+}
+
+/* vertical align top */
 .underline {
   padding-bottom: 5px;
   border-bottom: 1px solid #eee;
   margin: 0 0 20px 0;
-} /* Add 5px bottom padding and a underline */
+}
+
+/* Add 5px bottom padding and a underline */
 nav.vertical ul li {
   display: block;
-} /* vertical menu */
+}
+
+/* vertical menu */
 nav.horizontal ul li {
   display: inline-block;
-} /* horizontal menu */
+}
+
+/* horizontal menu */
 img {
   max-width: 100%;
 }
+
 .current-time {
   font-size: 35px;
   font-weight: 100;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
 .current-date {
   font-size: 18px;
   font-weight: 100;
@@ -360,6 +394,7 @@ div#txt {
 .copyright p a {
   color: #fff;
 }
+
 /*--w3layouts--*/
 /*--agileits--*/
 .copyright p a:hover {
@@ -404,6 +439,7 @@ div#txt {
   h1 {
     font-size: 45px;
   }
+
   /*--w3layouts--*/
   /*--agileits--*/
 }
@@ -412,9 +448,11 @@ div#txt {
   h1 {
     font-size: 35px;
   }
+
   .temperature p {
     font-size: 100px;
   }
+
   .dmy {
     padding-top: 25px;
   }
@@ -424,12 +462,15 @@ div#txt {
   .temperature p {
     font-size: 80px;
   }
+
   .dmy {
     padding-top: 10px;
   }
+
   div#txt {
     font-size: 30px;
   }
+
   .forecast-icon img {
     width: 110px;
   }
@@ -440,6 +481,7 @@ div#txt {
     font-size: 40px;
     margin-top: 30px;
   }
+
   .container {
     width: 95%;
     margin-top: 30px;
@@ -451,14 +493,17 @@ div#txt {
     font-size: 30px;
     margin-top: 45px;
   }
+
   div#txt {
     font-size: 25px;
   }
+
   /*--w3layouts--*/
   /*--agileits--*/
   .dmy {
     padding-top: 17px;
   }
+
   .temperature p {
     padding-bottom: 10px;
   }
@@ -468,29 +513,37 @@ div#txt {
   h1 {
     font-size: 35px;
   }
+
   .city {
     width: 100%;
     min-height: 300px;
   }
+
   .temperature {
     text-align: right;
   }
+
   .temperature p {
     font-size: 100px;
   }
+
   .dmy {
     padding-top: 35px;
   }
+
   .forecast-icon {
     margin: 10px 0;
   }
+
   .forecast {
     width: 100%;
     padding-bottom: 30px;
   }
+
   .copyright {
     padding-bottom: 20px;
   }
+
   .copyright p {
     line-height: 30px;
     font-size: 14px;
@@ -504,82 +557,108 @@ div#txt {
 }
 
 @media screen and (max-width: 480px) {
+
   /*--w3layouts--*/
   /*--agileits--*/
   h1 {
     font-size: 28px;
     letter-spacing: 2px;
   }
+
   .container {
     margin-bottom: 20px;
   }
+
   .forecast-icon {
     margin: 40px 0 10px;
   }
+
   .forecast-icon img {
     width: 100px;
   }
+
   .today-weather h3 {
     font-size: 40px;
   }
+
   .city {
     min-height: 450px;
   }
+
   .title h2 {
     font-size: 25px;
   }
+
   .title h3 {
     font-size: 14px;
   }
+
   .date-time {
     width: 100%;
     padding: 0;
   }
+
   .dmy {
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     text-align: center;
     width: 100%;
+    position: relative;
+    /* Fix overlapping issue */
   }
+
   div#txt {
     font-size: 30px;
   }
+
   .date {
     font-size: 22px;
   }
+
   .temperature {
     text-align: center;
     width: 100%;
   }
+
   .copyright {
     padding: 20px;
   }
+
   .temperature p {
     font-size: 60px;
     padding-bottom: 15px;
   }
+
   .forecast-icon img {
     width: 65px;
   }
+
   .today-weather h3 {
     font-size: 30px;
   }
+
   .copyright p {
     line-height: 25px;
     font-size: 13px;
   }
+
   .container {
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
     margin-top: 60px;
+    padding-bottom: 20px;
   }
+
   .mb-icon {
     top: 20% !important;
     display: block !important;
   }
+
   .forecast-icon,
   .today-weather h3 {
     display: none;
   }
+
   .today-weather {
     background-color: rgba(0, 0, 0, 0.73);
     margin-top: 22px;
@@ -593,15 +672,19 @@ div#txt {
     line-height: 1.5em;
     letter-spacing: 0;
   }
+
   .city {
     min-height: 315px;
   }
+
   .dmy {
     margin-bottom: 30px;
   }
+
   .date {
     font-size: 18px;
   }
+
   .temperature p {
     padding-bottom: 15px;
   }
@@ -613,6 +696,7 @@ div#txt {
   align-items: center;
   justify-content: center;
 }
+
 .search-box {
   display: flex;
   align-items: center;
@@ -621,6 +705,7 @@ div#txt {
   position: relative;
   z-index: 2;
 }
+
 .search-box .img-box {
   background: rgb(255, 255, 255, 0.2);
   border-radius: 50%;
@@ -631,10 +716,12 @@ div#txt {
   justify-content: center;
   padding: 2px;
 }
+
 .search-box img {
   width: 60%;
   cursor: pointer;
 }
+
 .search-box .search-bar {
   border: none;
   padding: 10px 11px;
@@ -643,14 +730,17 @@ div#txt {
   border-bottom: 1px solid;
   font-size: 16px;
 }
+
 .search-box .search-bar::placeholder {
   color: white;
 }
+
 .search-bar:focus {
   outline: none;
   border-bottom: 1px solid gray;
   transition: all 1s ease-in-out;
 }
+
 .mb-icon {
   height: 100%;
   position: absolute;
@@ -659,6 +749,7 @@ div#txt {
   z-index: 1;
   display: none;
 }
+
 .mb-icon p {
   color: white;
   width: fit-content;
@@ -667,13 +758,16 @@ div#txt {
   top: 2%;
   font-size: 25px;
 }
+
 .footer-info {
   color: white;
 }
+
 .footer-info a {
   color: floralwhite;
   font-weight: bold;
 }
+
 .hh_button {
   display: inline-block;
   text-decoration: none;
