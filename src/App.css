@@ -603,8 +603,8 @@ div#txt {
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
-    position: relative;
-    /* Fix overlapping issue */
+    float: none;
+    position: static;
   }
 
   div#txt {
@@ -618,6 +618,7 @@ div#txt {
   .temperature {
     text-align: center;
     width: 100%;
+    float: none;
   }
 
   .copyright {
