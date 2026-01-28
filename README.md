@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="Images/banner.png" alt="Weather App Banner" width="100%" />
+
 # 🌤️ Live Weather App
 
 ### Real-time Weather Forecasting Application
@@ -7,31 +9,21 @@
 [![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/projects/weather-forcasting-temperature/deploys)
 [![React](https://img.shields.io/badge/React-16.13.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-8250DF?style=for-the-badge&logo=github&logoColor=white)](CONTRIBUTING.md)
-
-<div align="center">
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
-[![Features](https://img.shields.io/badge/Documentation-Features-0969DA?style=for-the-badge&logo=readthedocs&logoColor=white)](#features)
-[![Report Bug](https://img.shields.io/badge/Report-Bug-D1242F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App/issues)
-[![Request Feature](https://img.shields.io/badge/Request-Feature-2EA44F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App/issues)
-
-</div>
-
 </div>
 
 ---
 
 ## 🎯 About
 
-<div align="left">
-
-  <img src="https://img.shields.io/badge/Status-Live-2EA44F?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Maintained-Yes-0969DA?style=for-the-badge&logo=github&logoColor=white" />
-
-</div>
-
 <p align="justify">A beautiful, responsive weather application built with React that provides real-time weather information for any location worldwide. Get instant access to current weather conditions, temperature, humidity, wind speed, and more!</p>
+
+---
+
+## 🚀 Live Demo
+
+Try the live version of the app:
+
+[![Live Demo](https://img.shields.io/badge/LIVE-VISIT_SITE-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
 
 ---
 
@@ -219,16 +211,6 @@ Contributions are what make the open-source community such an amazing place to l
 ## 📝 License
 
 This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Ajay Gangwar**
-
-- [![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945)
-- [![Repository](https://img.shields.io/badge/Repository-Weather--App-0969DA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ajaygangwar945/Weather-App)
-- [![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
 
 ---
 
