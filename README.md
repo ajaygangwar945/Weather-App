@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Images/banner.png" alt="Weather App Banner" width="100%" />
+<img src="Images/banner.png" alt="Weather App Banner" width="100%" height="250px" style="object-fit: cover;" />
 
 # 🌤️ Live Weather App
 
