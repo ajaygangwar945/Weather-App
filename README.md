@@ -1,6 +1,5 @@
 <div align="center">
-
-<img src="Images/banner.png" alt="Weather App Banner" width="100%" height="250px" style="object-fit: cover;" />
+<img src="Images/banner.png" alt="Weather App Banner" width="100%" height="200px" />
 
 # 🌤️ Live Weather App
 
@@ -100,8 +99,9 @@ Try the live version of the app:
 
 Before you begin, ensure you have the following installed:
 
-- ![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?style=for-the-badge&logo=node.js&logoColor=white)
-- ![npm](https://img.shields.io/badge/npm-v6+-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-v14+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+
+![npm](https://img.shields.io/badge/npm-v6+-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
 ### 📥 Installation
 
@@ -166,7 +166,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ajaygangwar945/Weather-App)
+[![Deploy to Netlify](https://img.shields.io/badge/Deploy_to-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/start/deploy?repository=https://github.com/ajaygangwar945/Weather-App)
 
 ### Manual Deployment
 
@@ -216,9 +216,11 @@ This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- [![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-FE7A16?style=for-the-badge&logo=openweathermap&logoColor=white)](https://openweathermap.org/)
-- [![React Animated Weather](https://img.shields.io/badge/Weather-Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://www.npmjs.com/package/react-animated-weather)
-- [![Netlify](https://img.shields.io/badge/Hosted-On_Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-FE7A16?style=for-the-badge&logo=openweathermap&logoColor=white)](https://openweathermap.org/)
+
+[![React Animated Weather](https://img.shields.io/badge/Weather-Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://www.npmjs.com/package/react-animated-weather)
+
+[![Netlify](https://img.shields.io/badge/Hosted-On_Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
 
 ---
 
