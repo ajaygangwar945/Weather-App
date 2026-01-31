@@ -1,5 +1,5 @@
 <div align="center">
-<img src="Images/banner.png" alt="Weather App Banner" width="100%" height="200px" />
+<img src="Images/banner.png" alt="Weather App Banner" width="100%" height="200" style="object-fit: cover" />
 
 # 🌤️ Live Weather App
 
