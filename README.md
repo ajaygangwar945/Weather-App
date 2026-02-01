@@ -18,7 +18,7 @@
 
 ---
 
-## 🚀 Live Demo
+## 🚀 View Live Site
 
 The project has been fully deployed and is accessible online.
 
