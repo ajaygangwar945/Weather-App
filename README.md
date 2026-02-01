@@ -20,7 +20,7 @@
 
 ## 🚀 Live Demo
 
-Try the live version of the app:
+The project has been fully deployed and is accessible online.
 
 [![Live Demo](https://img.shields.io/badge/LIVE-VISIT_SITE-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://weather-forcasting-temperature.netlify.app/)
 
