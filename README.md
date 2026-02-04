@@ -93,13 +93,15 @@ Weather-App/
 ├── Images/
 │   ├── banner.png          # README banner image
 │   └── weather.png         # README screenshot
-├── .env                    # Environment variables (gitignored)
-├── .env.example            # Environment template
-├── .gitignore              # Git ignore rules
+├── .env                    # 🔒 Environment variables (NOT tracked in Git)
+├── .env.example            # Environment template (safe to commit)
+├── .gitignore              # Git ignore rules (protects .env)
 ├── package.json            # Project dependencies
 ├── LICENSE                 # MIT License
 └── README.md               # Project documentation
 ```
+
+> **🔒 Security Note**: The `.env` file contains your API key and is **never committed to Git**. Use `.env.example` as a template to create your local `.env` file.
 
 ---
 
@@ -244,11 +246,16 @@ After deploying, you need to add your API key as an environment variable:
 1. Go to your Netlify site dashboard
 2. Navigate to **Site settings** → **Build & deploy** → **Environment**
 3. Click **Add environment variable**
-4. Add:
+4. Configure the variable:
    - **Key**: `REACT_APP_WEATHER_API_KEY`
-   - **Value**: Your OpenWeatherMap API key
-5. Click **Save**
-6. Trigger a new deploy for changes to take effect
+   - **Secret**: ✅ Check "Contains secret values" (recommended for security)
+   - **Scopes**: Select "All scopes"
+   - **Values**: Select "Same value for all deploy contexts"
+   - **Value**: Paste your OpenWeatherMap API key
+5. Click **Create variable**
+6. Go to **Deploys** tab and click **Trigger deploy** → **Deploy site**
+
+> **Security Note**: Marking the variable as "Secret" ensures your API key is never exposed in logs or the UI, and is only accessible to your deployed application.
 
 **Supported Platforms:**
 
