@@ -69,6 +69,59 @@ The project has been fully deployed and is accessible online.
 
 ---
 
+## 📁 Project Structure
+
+```
+Weather-App/
+├── public/
+│   ├── index.html          # Main HTML template
+│   ├── manifest.json       # PWA manifest
+│   ├── robots.txt          # SEO configuration
+│   └── weather_icon.svg    # Custom favicon
+├── src/
+│   ├── images/
+│   │   ├── background.jpg  # App background image
+│   │   ├── city.jpg        # City weather background
+│   │   └── WeatherIcons.gif # Loading animation
+│   ├── App.css             # Main application styles
+│   ├── App.js              # Root React component
+│   ├── apiKeys.js          # API configuration (reads from .env)
+│   ├── currentLocation.js  # Current weather component
+│   ├── forcast.js          # Weather forecast component
+│   ├── index.css           # Global styles
+│   └── index.js            # React entry point
+├── Images/
+│   ├── banner.png          # README banner image
+│   └── weather.png         # README screenshot
+├── .env                    # Environment variables (gitignored)
+├── .env.example            # Environment template
+├── .gitignore              # Git ignore rules
+├── package.json            # Project dependencies
+├── LICENSE                 # MIT License
+└── README.md               # Project documentation
+```
+
+---
+
+## 🔒 Security Features
+
+<table>
+  <tr>
+    <td>🔐</td>
+    <td><b>Environment Variables</b><br/>API keys stored securely in .env file, never committed to Git</td>
+  </tr>
+  <tr>
+    <td>🔑</td>
+    <td><b>API Key Protection</b><br/>Sensitive credentials isolated from source code</td>
+  </tr>
+  <tr>
+    <td>🚫</td>
+    <td><b>.gitignore</b><br/>Prevents accidental exposure of secrets and build artifacts</td>
+  </tr>
+</table>
+
+---
+
 ## 🛠️ Tech Stack
 
 <div align="left">
@@ -126,24 +179,31 @@ npm install
 
 1. **Configure API key**
 
-Open `src/apiKeys.js` and add your API key:
+   Create a `.env` file in the project root (copy from `.env.example`):
 
-```javascript
-module.exports = {
-  key: "YOUR_API_KEY_HERE",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
-```
+   ```bash
+   cp .env.example .env
+   ```
+
+   Then open `.env` and add your API key:
+
+   ```env
+   REACT_APP_WEATHER_API_KEY=YOUR_API_KEY_HERE
+   ```
+
+   > **Note**: The `.env` file is gitignored for security. Never commit API keys to version control.
 
 1. **Start the development server**
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
+
+   > **Important**: If you already have `npm start` running, you need to restart it for the `.env` changes to take effect.
 
 1. **Open your browser**
 
-Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -176,6 +236,19 @@ npm run build
 
 # Deploy the 'build' folder to your hosting service
 ```
+
+**Important for Netlify Deployment:**
+
+After deploying, you need to add your API key as an environment variable:
+
+1. Go to your Netlify site dashboard
+2. Navigate to **Site settings** → **Build & deploy** → **Environment**
+3. Click **Add environment variable**
+4. Add:
+   - **Key**: `REACT_APP_WEATHER_API_KEY`
+   - **Value**: Your OpenWeatherMap API key
+5. Click **Save**
+6. Trigger a new deploy for changes to take effect
 
 **Supported Platforms:**
 
