@@ -79,6 +79,7 @@ Weather-App/
 │   ├── forcast.js          # Search functionality & forecast logic
 │   └── index.js            # Entry point
 ├── .env                    # 🔒 Private API keys
+├── Project_Report.txt      # Detailed project documentation & rationale
 ├── package.json            # Project dependencies
 └── README.md               # Documentation
 ```
