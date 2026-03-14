@@ -1,7 +1,7 @@
 <div align="center">
 <img src="Images/banner.png" alt="Weather App Banner" width="100%" height="200" style="object-fit: cover" />
 
-# 🌤️ Live Weather App
+# 🌤️ Weather App
 
 ### Real-time Weather Forecasting Application
 
@@ -40,16 +40,19 @@ The project is fully deployed and accessible online.
 ## 🛠️ Tech Stack & Rationale
 
 ### **Frontend & UI**
+
 - **React.js**: Chosen for its component-based architecture, allowing for modular development.
 - **HTML5 & CSS3**: Utilized for semantic structure and custom responsive styling.
 - **JavaScript (ES6+)**: Handles the application logic, state, and asynchronous API interactions.
 
 ### **APIs & Data**
+
 - **OpenWeatherMap API**: The primary data source providing comprehensive real-time atmospheric data.
 - **Geolocation API (Native)**: Enables the "instant local weather" feature without user input.
 - **Fetch & Axios**: Used for making reliable network requests to weather servers.
 
 ### **Libraries**
+
 - **react-animated-weather**: Handles dynamic weather iconography.
 - **react-live-clock**: Powers the real-time dashboard clock.
 - **react-geolocated**: Simplifies the integration of geolocation services.
@@ -58,11 +61,11 @@ The project is fully deployed and accessible online.
 
 ## ⚙️ How It Works
 
-1.  **Detection**: On initial load, the app requests permission to access the user's location via the Geolocation API.
-2.  **API Call (Auto)**: If permission is granted, `currentLocation.js` fetches weather data for those specific coordinates.
-3.  **API Call (Search)**: Users can search for any city. `forcast.js` uses **Axios** to query the OpenWeatherMap API by city name.
-4.  **State Management**: React updates the application state with temperature, city name, and weather status (e.g., "Haze", "Rain").
-5.  **Dynamic UI**: The UI dynamically updates background images and animated icons to match the current conditions.
+1. **Detection**: On initial load, the app requests permission to access the user's location via the Geolocation API.
+2. **API Call (Auto)**: If permission is granted, `currentLocation.js` fetches weather data for those specific coordinates.
+3. **API Call (Search)**: Users can search for any city. `forcast.js` uses **Axios** to query the OpenWeatherMap API by city name.
+4. **State Management**: React updates the application state with temperature, city name, and weather status (e.g., "Haze", "Rain").
+5. **Dynamic UI**: The UI dynamically updates background images and animated icons to match the current conditions.
 
 ---
 
@@ -89,6 +92,7 @@ Weather-App/
 ## 🚀 Installation & Setup
 
 ### 📥 1. Clone & Install
+
 ```bash
 git clone https://github.com/ajaygangwar945/Weather-App.git
 cd Weather-App
@@ -96,12 +100,15 @@ npm install
 ```
 
 ### 🔑 2. API Key Configuration
+
 Create a `.env` file in the root directory:
+
 ```env
 REACT_APP_WEATHER_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
 ```
 
 ### 🏃 3. Run Locally
+
 ```bash
 npm start
 ```
@@ -118,6 +125,7 @@ npm start
 ---
 
 ## 🤝 Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the Project
@@ -129,6 +137,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 ## 📝 License
+
 This project is licensed under the MIT License.
 
 ---
