@@ -6,7 +6,8 @@
 ### Real-time Weather Forecasting Application
 
 [![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/projects/weather-forcasting-temperature/deploys)
-[![React](https://img.shields.io/badge/React-16.13.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-16.14-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
 </div>
 
@@ -14,7 +15,7 @@
 
 ## 🎯 About
 
-A beautiful, responsive weather application built with **React** that provides real-time weather information for any location worldwide. It leverages the **OpenWeatherMap API** and the browser's native **Geolocation API** to deliver an instant and accurate weather experience.
+A beautiful, responsive weather application built with **React** and powered by **Vite** that provides real-time weather information for any location worldwide. It leverages the **OpenWeatherMap API** and the browser's native **Geolocation API** to deliver an instant and accurate weather experience.
 
 ---
 
@@ -34,6 +35,7 @@ The project is fully deployed and accessible online.
 - 🎨 **Animated Icons**: Visual weather conditions are matched with beautiful Skycons animations.
 - ⏰ **Live Clock**: Features a real-time ticking clock with current date display.
 - 📱 **Responsive Design**: Fully optimized for mobile, tablet, and desktop views.
+- ⚡ **Lightning Fast (Vite)**: Instant server start and sub-second production builds with 0 dependency vulnerabilities.
 
 ---
 
@@ -42,6 +44,7 @@ The project is fully deployed and accessible online.
 ### **Frontend & UI**
 
 - **React.js**: Chosen for its component-based architecture, allowing for modular development.
+- **Vite**: Modern front-end build tool that replaces legacy Create React App, providing instant HMR and optimized bundling.
 - **HTML5 & CSS3**: Utilized for semantic structure and custom responsive styling.
 - **JavaScript (ES6+)**: Handles the application logic, state, and asynchronous API interactions.
 
@@ -51,19 +54,18 @@ The project is fully deployed and accessible online.
 - **Geolocation API (Native)**: Enables the "instant local weather" feature without user input.
 - **Fetch & Axios**: Used for making reliable network requests to weather servers.
 
-### **Libraries**
+### **Components & Helpers**
 
-- **react-animated-weather**: Handles dynamic weather iconography.
-- **react-live-clock**: Powers the real-time dashboard clock.
-- **react-geolocated**: Simplifies the integration of geolocation services.
+- **react-animated-weather (with ESM Wrapper)**: Handles dynamic Skycons animations with a compatibility layer for modern bundlers.
+- **Native React Clock (`Clock.jsx`)**: Lightweight, zero-dependency digital clock powered by React Hooks (`useState`, `useEffect`) and browser-native Date APIs.
 
 ---
 
 ## ⚙️ How It Works
 
 1. **Detection**: On initial load, the app requests permission to access the user's location via the Geolocation API.
-2. **API Call (Auto)**: If permission is granted, `currentLocation.js` fetches weather data for those specific coordinates.
-3. **API Call (Search)**: Users can search for any city. `forcast.js` uses **Axios** to query the OpenWeatherMap API by city name.
+2. **API Call (Auto)**: If permission is granted, `currentLocation.jsx` fetches weather data for those specific coordinates.
+3. **API Call (Search)**: Users can search for any city. `forcast.jsx` uses **Axios** to query the OpenWeatherMap API by city name.
 4. **State Management**: React updates the application state with temperature, city name, and weather status (e.g., "Haze", "Rain").
 5. **Dynamic UI**: The UI dynamically updates background images and animated icons to match the current conditions.
 
@@ -73,17 +75,24 @@ The project is fully deployed and accessible online.
 
 ```bash
 Weather-App/
-├── public/                 # Main HTML, manifest, and SEO assets
+├── index.html              # Single page entry point (Vite root)
+├── vite.config.js          # Vite configuration & plugins
+├── public/                 # Static assets (favicons, robots.txt, manifest)
 ├── src/
 │   ├── images/             # UI backgrounds and loading icons
-│   ├── App.js              # Root component
+│   ├── App.css             # Main styling & responsive layout
+│   ├── App.jsx             # Main App layout component
 │   ├── apiKeys.js          # Environment-based API config
-│   ├── currentLocation.js  # Main dashboard & location logic
-│   ├── forcast.js          # Search functionality & forecast logic
-│   └── index.js            # Entry point
-├── .env                    # 🔒 Private API keys
-├── Project_Report.txt      # Detailed project documentation & rationale
-├── package.json            # Project dependencies
+│   ├── Clock.jsx           # Lightweight ticking digital clock
+│   ├── currentLocation.jsx # Main dashboard & geolocation logic
+│   ├── forcast.jsx         # Search functionality & forecast logic
+│   ├── WeatherIcon.jsx     # ESM adapter for animated weather icons
+│   ├── index.css           # Global typography & baseline styles
+│   └── index.jsx           # React DOM root render
+├── .env                    # 🔒 Private API keys (VITE_WEATHER_API_KEY)
+├── .env.example            # Environment variables template
+├── Project_Report.txt      # Detailed project documentation & college report
+├── package.json            # Project dependencies & scripts
 └── README.md               # Documentation
 ```
 
@@ -101,17 +110,29 @@ npm install
 
 ### 🔑 2. API Key Configuration
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory (or copy `.env.example`):
 
 ```env
-REACT_APP_WEATHER_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
+VITE_WEATHER_API_KEY=YOUR_OPENWEATHERMAP_API_KEY
 ```
+
+*(Legacy `REACT_APP_WEATHER_API_KEY` is also supported for backwards compatibility).*
 
 ### 🏃 3. Run Locally
 
 ```bash
+# Start development server (http://localhost:3000)
 npm start
+# or
+npm run dev
 ```
+
+### 📦 4. Build for Production
+
+```bash
+npm run build
+```
+The optimized production bundle will be generated in the `/dist` folder in under a second.
 
 ---
 
